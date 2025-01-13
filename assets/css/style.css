@@ -124,6 +124,11 @@ h2 {
     font-weight: bold;
     color: white;
     background-color: var(--highlight-color--);
+    align-content: center;
+}
+
+#student-discount p {
+    min-height: 35px;
 }
 
 /* Footer */
@@ -160,7 +165,6 @@ h2 {
 #contact .table-dark * {
     background-color: transparent;
 }
-
 
 /*
 .container, .row {
