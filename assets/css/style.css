@@ -193,6 +193,11 @@ h2 {
     background-color: transparent;
 }
 
+/* Success Page */
+#success #return-to-homepage {
+    width: 15rem;
+}
+
 /*
 .container, .row {
     border: 2px solid black;
