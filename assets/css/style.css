@@ -131,7 +131,11 @@ h2 {
     background-clip: padding-box;
     border: var(--bs-border-width) solid var(--bs-border-color);
     border-radius: var(--bs-border-radius);
+    -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    -o-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
 
 #reserve-game #select-game:focus {
@@ -139,7 +143,8 @@ h2 {
     background-color: var(--bs-body-bg);
     border-color: #86b7fe;
     outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+    -webkit-box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+            box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
 }
 
 /* Events */
@@ -151,7 +156,8 @@ h2 {
     font-weight: bold;
     color: white;
     background-color: var(--highlight-color--);
-    align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
 }
 
 #student-discount p {
@@ -182,6 +188,8 @@ h2 {
 #contact .social-links i {
     color: var(--highlight-color-light--);
     font-size: 1.9rem;
+    -webkit-transition: color 0.3s ease-in-out;
+    -o-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 }
 
@@ -198,17 +206,6 @@ h2 {
     width: 15rem;
 }
 
-/*
-.container, .row {
-    border: 2px solid black;
-}
-
-.col-12 {
-    border: 2px solid white;
-    background-color: lightgray;
-}
-*/
-
 /* Media queries */
 
 /* Medium devices (tablets 768px and up) */
@@ -223,7 +220,9 @@ h2 {
     }
 
     #events .student-discount {
-        justify-content: end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: end;
     }
 }
 
@@ -255,7 +254,7 @@ h2 {
 @media screen and (min-width: 1400px) {
     /* Make all service cards the same height */
     #services .card-body {
-        min-height: 194;
+        min-height: 194px;
     }
 
     #favourite-games .card-body {
