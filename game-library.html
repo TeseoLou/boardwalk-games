@@ -261,7 +261,7 @@
                         </div>
                         <div class="col-12 mb-3 col-lg-8">
                             <label for="select-game" class="form-label">Select Game</label><br>
-                            <select id="select-game" class="select-game col-lg-12" name="select-game" required>
+                            <select id="select-game" class="select-game col-12" name="select-game" required>
                                 <option value="" selected>Select Game</option>
                                 <option value="galaxy-pioneers">Galaxy Pioneers</option>
                                 <option value="mystic-woods">Mystic Woods</option>
@@ -277,7 +277,9 @@
                             <label for="request-date" class="form-label">Request Date</label>
                             <input class="form-control" id="request-date" name="request-date" type="date" required>
                         </div>
-                        <button type="submit" class="btn custom-button-outline">Submit</button>
+                        <div class="d-flex justify-content-end">
+                            <button type="submit" id="reserve-game-submit" class="btn custom-button-outline mx-0">Submit</button>
+                        </div>
                     </div>
                 </form>
             </section>
